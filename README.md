@@ -1,6 +1,7 @@
 # アプリケーション名 ：　　 Atte（アット） 　概要説明：勤怠管理システム</br>
 　勤務開始時刻・勤務終了時刻・休憩時間・勤務時間を表示するシステム</br>
 　トップ画面</br>
+<img width="860" alt="トップ画面" src="https://github.com/k-ike2525/Atte/assets/137484536/10645ec3-1a66-488e-90e7-0c1698e6f9e4">
 
 ## 作成した目的
 人事評価のため</br>
@@ -35,9 +36,11 @@
 ・php 　 html 　 css など </br>
 
 ## テーブル設計の画像
-テーブル設計
+<img width="578" alt="テーブル設計" src="https://github.com/k-ike2525/Atte/assets/137484536/a4707db7-633b-4c0a-a569-9ae08f4a4557">
+
 ## ER 図
-ER 図
+<img width="929" alt="ER図" src="https://github.com/k-ike2525/Atte/assets/137484536/ba4a2195-736a-46d3-8c46-6c353fb30738">
+
 
 ## 環境構築
 開発環境を GitHub からクローン　 </br>
