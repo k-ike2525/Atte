@@ -1,0 +1,74 @@
+.site-width {
+    width: 100%;
+    min-height: 800px;
+    background-color: rgba(233, 233, 232, 0.562);
+}
+
+.today {
+    margin: 0 auto;
+    padding: 50px 15px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: serif;
+    font-weight: 600;
+}
+
+.today .list-item-today a {
+    border: 1px solid black;
+    padding: 5px 15px;
+    margin: 30px;
+    background: #fbfbfb;
+    color: rgb(58, 132, 236);
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+.my-parts {
+    white-space: nowrap;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.my-parts th,
+.my-parts td {
+    border-top: solid 3px rgba(0, 0, 0, .1);
+    width: 80px;
+    padding: 30px;
+    text-align: center;
+}
+
+.table{
+        height: 500px;
+}
+
+
+/*** // ページネーション// ***/
+.pagination {
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.pagination-list {
+    position: relative;
+    left: 50%;
+    float: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+.pagination .list-item {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin-right: 5px;
+}
+
+

@@ -1,0 +1,49 @@
+.table-site {
+    width: 100%;
+    min-height: 800px;
+    background-color: rgba(233, 233, 232, 0.562);
+}
+
+.top {
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.archive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20;
+    padding: 20;
+}
+
+.archive div {
+    margin: 15px;
+    padding: 10px;
+    width: 33%;
+}
+
+.archive .btn {
+    white-space: nowrap;
+    background-color: rgb(45, 45, 45);
+    border-color: #2c2c2c;
+    padding: 0px 41%;
+    font-size: 24px;
+    font-weight: 600;
+    height: 200px;
+    justify-content: center;
+    color: #ededed;
+}
+
+.btn:hover {
+    color: black;
+    opacity: 0.7;
+}
+

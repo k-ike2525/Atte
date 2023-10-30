@@ -1,0 +1,91 @@
+
+/*** // ヘッダー // ***/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header-ttl {
+    font-size: 24px;
+    width: 80px;
+    list-style-type: none;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+}
+
+.header-nav-item {
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+/*** // メニュー // ***/
+#top-nav {
+    position: relative;
+    float: right;
+    width: 500px;
+    height: 90px;
+}
+
+nav a {
+    padding: 10px 15px;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#top-nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 450px;
+    height: 80px;
+    list-style: none;
+    line-height: 80px;
+}
+
+#top-nav ul li {
+    float: right;
+}
+
+
+/*** // フッター // ***/
+footer {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+footer a {
+    color: #000000;
+}
+
+#contact {
+    margin-bottom: 150px;
+    margin: 0 auto;
+}

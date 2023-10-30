@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +13,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('wel');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/attendance', 'AttendanceController@index')->name('attendance.index');
+
+Route::group(['middleware' => 'guest'], function() {
+    Route::get('/register', 'Auth\RegisteredUserController@create')->name('register');
+    Route::post('/register', 'Auth\RegisteredUserController@store')->name('register');
+ });
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::post('/start_time', 'WorkingsController@punchIn')->name('start_time');
+    Route::post('/end_time', 'WorkingsController@punchOut')->name('end_time');
+});
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::post('/breakings_start_time', 'BreakingsController@breakIn')->name('breakings_start_time');
+    Route::post('/breakings_end_time', 'BreakingsController@breakOut')->name('breakings_end_time');
+});
+
+
+
+
+//Route::group(['middleware' => 'auth'], function() {
+//    Route::post('/punchin', 'TimestampsController@In')->name('timestamp/punchin');
+//    Route::post('/punchout', 'TimestampsController@Out')->name('timestamp/punchout');
+//});
+
+
