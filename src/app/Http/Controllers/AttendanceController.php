@@ -20,11 +20,11 @@ class AttendanceController extends Controller
 
         $date = Carbon::parse(request()->get('date', now()))->format('Y-m-d');
 
-        // 各ユーザーに対して最新の勤怠情報と休憩情報を取得
+        // 各ユーザーに対して最新の勤怠情報を取得
         $users = User::all();
 
         foreach ($users as $user) {
-            // ユーザーごとに同一日の勤怠情報を取得
+            // ユーザーごとに同じ日の勤怠情報を取得
             $workings = Workings::where('users_id', $user->id)
                 ->whereDate('created_at', $date)
                 ->get();
@@ -35,7 +35,7 @@ class AttendanceController extends Controller
 
             foreach ($workings as $work) {
                 // ユーザーごとに最新の休憩情報を取得して合計を計算
-                $breaks = Breakings::where('breakings_id', $work->id)->get();
+                $breaks = Breakings::where('id', $work->id)->get();
 
                 foreach ($breaks as $break) {
                     $start_time = strtotime($break->breakings_start_time);
