@@ -32,14 +32,14 @@
 
 .archive .btn {
     white-space: nowrap;
-    background-color: rgb(45, 45, 45);
-    border-color: #2c2c2c;
+    background-color: rgb(255, 255, 255);
+    border-color: #e5e5e5;
     padding: 0px 41%;
     font-size: 24px;
     font-weight: 600;
     height: 200px;
     justify-content: center;
-    color: #ededed;
+    color: #1c1c1c;
 }
 
 .btn:hover {

@@ -20,9 +20,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/common.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/stamp.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/register.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/data.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/attendance.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
 
 
@@ -50,7 +50,7 @@
                         @guest
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('home') }}">ホーム</a>
+                                <a class="nav-link" href="{{ url('stamp') }}">ホーム</a>
                             </li>
 
                             <li class="nav-item">
